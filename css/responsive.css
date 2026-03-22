@@ -15,6 +15,8 @@
 @media only screen and (max-width: 767px) {}
 
 @media only screen and (max-width: 575px) {
+
+    /* Header Section */
     header .top-header .left-block {
         display: none;
     }
@@ -29,7 +31,6 @@
     }
 
     header .header-menu .menu-block {
-        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -38,8 +39,12 @@
         width: 50%;
         height: 100%;
         z-index: 999;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
     }
-
+header .header-menu .menu-block.open{
+    transform: translateX(0);
+}
     .menu-section::after {
         content: '';
         position: fixed;
@@ -60,6 +65,14 @@
         margin: 0;
     }
 
+    /* Header Section End */
+
+    /*  Banner Section */
+    .hero-block .hero-title {
+        padding: 0 20px;
+    }
+
+    /*  Banner Section End */
 }
 
 @media only screen and (max-width: 480px) {}

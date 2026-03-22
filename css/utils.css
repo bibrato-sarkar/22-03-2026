@@ -139,6 +139,7 @@ header .header-menu .menu-block ul li:nth-child(4) button:hover {
 
 header .header-menu .menu-block ul li button {
     background-color: #01963f;
+    font-size: 1em;
     color: #fff;
     border: none;
     padding: 6px 12px;
