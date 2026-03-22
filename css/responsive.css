@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1366px) {}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {
+    .hero-block .hero-title {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 575px) {
+    header .top-header .left-block {
+        display: none;
+    }
+
+    header .top-header .d-flex {
+        justify-content: flex-end;
+    }
+
+    header .header-menu .hamburger-button,
+    header .header-menu .menu-block .close-button {
+        display: block;
+    }
+
+    header .header-menu .menu-block {
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 50vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    header .header-menu .menu-block ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 100px 50px;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 420px) {}
+
+@media only screen and (max-width: 350px) {}

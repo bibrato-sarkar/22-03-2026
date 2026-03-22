@@ -1,0 +1,240 @@
+.container {
+    max-width: min(1200px);
+    padding: 0 15px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-spacebetween {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Header Section  */
+header {
+    background-color: var(--primary-color);
+}
+
+header .top-header {
+    background-color: #000;
+    padding: 10px;
+}
+
+header .top-header .left-block {
+    padding: 0;
+    margin: 0;
+}
+
+header .top-header .left-block ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+header .top-header .left-block ul li a {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+header .top-header .right-block {
+    padding: 0;
+    margin: 0;
+}
+
+header .top-header .right-block ul {
+    display: flex;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+header .top-header .right-block ul li a {
+    color: var(--primary-color);
+}
+
+header .header-menu {
+    padding: 4px 0;
+}
+
+header .header-menu .logo-block a {
+    color: var(--secondary-color);
+    font-size: 26px;
+}
+
+header .header-menu .hamburger-button {
+    display: none;
+    color: var(--secondary-color);
+    font-size: 26px;
+}
+
+header .header-menu .menu-block .close-button {
+    position: absolute;
+    display: none;
+    color: var(--secondary-color);
+    font-size: 32px;
+    top: 8px;
+    right: 24px;
+}
+
+header .header-menu .menu-block ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header .header-menu .menu-block ul li a {
+    position: relative;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+header .header-menu .menu-block ul li a::before {
+    content: '';
+    position: absolute;
+    background-color: var(--third-color);
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    transition: width 0.3s ease;
+}
+
+header .header-menu .menu-block ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+header .header-menu .menu-block ul li a:hover {
+    color: var(--fourth-color);
+}
+
+header .header-menu .menu-block ul li a:active {
+    color: var(--third-color);
+}
+
+header .header-menu .menu-block ul li:nth-child(4) button {
+    background-color: #c95b02;
+}
+
+header .header-menu .menu-block ul li:nth-child(4) button:hover {
+    background-color: #c24d00;
+}
+
+header .header-menu .menu-block ul li button {
+    background-color: #01963f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+header .header-menu .menu-block ul li:nth-child(5) button:hover {
+    background-color: #03a948;
+    color: #fff;
+}
+
+header .header-menu .menu-block ul li button:active {
+    background-color: #01be50;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Header Section End  */
+/* Banner Section */
+.hero-block {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-block::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0 0 0 /50%);
+    backdrop-filter: blur(3px);
+}
+
+.hero-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-block .hero-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    padding: 0 300px;
+    font-family: inherit;
+    color: var(--primary-color);
+    line-height: 1.6;
+    text-align: center;
+    z-index: 99;
+}
+
+.hero-block .hero-title h1 {
+    font-family: inherit;
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.hero-block .hero-title h2 {
+    font-family: inherit;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.hero-block .hero-title p {
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.hero-block .hero-title button {
+    background-color: #c95b02;
+    font-size: 1em;
+    color: #fff;
+    padding: 14px 18px;
+    border: none;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.hero-block .hero-title button:hover {
+    background-color: #be5319;
+}
+
+.hero-block .hero-title button:active {
+    background-color: #ce561e;
+    transform: scale(1.1);
+}
+
+/* header Section End */
